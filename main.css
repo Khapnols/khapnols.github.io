@@ -30,16 +30,19 @@ html {
     
 }
 #navbar ul li a {
+    color: black;
     padding: 0.75rem;
 }
 
 #navbar ul li a:hover {
-    background: #051622;
+    background: #FFAEBC;
     border-radius: 25px;
 }
 
 body{
-    background-color:#DEB992;
+    /* background-color:#DEB992; */
+    background: url(img/bg.svg) no-repeat;
+    background-size: cover;
 }
 
 #Home {
@@ -60,9 +63,11 @@ body{
     text-align: center;
 }
 #Home .name h2 {
+    font-size: 3rem;
     margin-bottom: 0.75rem;
 }
 #Home .name p {
+    font-size: 2rem;
     opacity: 0.5;
     font-style: italic;
 }
