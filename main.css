@@ -1,3 +1,9 @@
+:root {
+  --night: #1F1D36;
+  --space: #3F3351;
+  --purple: #864879;
+  --peach: #E9A6A6;
+}
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   font-family: "Inter", sans-serif;
@@ -17,7 +23,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(pexels-alex-knight-2816904.jpg);
+  background-image: url(bg.jpg);
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -35,13 +41,13 @@ header {
   align-items: center;
 }
 header .logo {
-  color: #f6f6f6;
+  color: var(--night);
   position: relative;
   max-width: 5rem;
 }
 header .logo:hover {
   transition: 2s;
-  color: #fde4c3;
+  color: var(--purple);
 }
 
 header ul {
@@ -50,12 +56,12 @@ header ul {
 }
 header ul li a {
   display: flex;
-  color: #f6f6f6;
+  color: var(--space);
   font-weight: 400;
   margin-left: 40px;
 }
 header ul li a:hover {
-  color: #fde4c3;
+  color: var(--purple);
   transform: translate(1rem, 0.5rem);
   transition: 0.75s;
 }
@@ -75,24 +81,24 @@ header ul li a:hover {
 }
 .content .textBox h2 {
   
-  color: #f6f6f6;
+  color: var(--peach);
   font-size: 4rem;
   line-height: 1.4em;
   font-weight: 500;
 }
 .content .textBox h2 span {
-  color: #fde4c3;
+  color: var(--purple);
   font-weight: 900;
 }
 .content .textBox p {
-  color: #f6f6f6;
+  color: var(--purple);
 }
 .content .textBox a {
   display: inline-block;
   margin-top: 1.25rem;
   padding: 0.5rem 1.25rem;
-  background: #fde4c3;
-  color: #000000;
+  background: var(--space);
+  color: var(--peach);
   border-radius: 3rem;
   font-weight: 500;
   letter-spacing: 1px;
